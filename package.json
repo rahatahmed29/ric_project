@@ -1,0 +1,20 @@
+{
+  "name": "ric_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+   "build": "npx tailwindcss -i ./input.css -o ./dist/output.css --minify && shx cp src/*.html dist/ && shx cp -r src/images dist/"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "shx": "^0.4.0",
+    "tailwindcss": "^4.1.10"
+  }
+}
