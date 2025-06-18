@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./input.css -o ./dist/output.css --minify && shx cp src/*.html dist/ && shx cp -r src/images dist/"
+     "build": "shx mkdir -p dist && npx tailwindcss -i ./input.css -o ./dist/output.css --minify && shx cp src/*.html dist && shx cp -r src/images dist"
+
+
   },
   "keywords": [],
   "author": "",
